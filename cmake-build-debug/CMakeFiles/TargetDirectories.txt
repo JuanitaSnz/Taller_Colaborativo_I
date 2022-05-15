@@ -1,0 +1,3 @@
+C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug/CMakeFiles/Taller_ColaborativoC.dir
+C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

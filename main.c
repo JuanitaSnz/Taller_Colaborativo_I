@@ -53,7 +53,7 @@ void menu(){
                 break;
             case 10:
                 break;
-            case default:
+            default:
                 printf("Opcion no valida\n");
                 break;
         }

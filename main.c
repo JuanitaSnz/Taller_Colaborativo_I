@@ -49,6 +49,13 @@ void menu(){
             case 3:
                 countVowels();
                 break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case default:
+                printf("Opcion no valida\n");
+                break;
         }
 
 

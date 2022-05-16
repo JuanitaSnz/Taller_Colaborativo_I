@@ -13,6 +13,18 @@ int main() {
     return 0;
 }
 
+void fillCharacters() {
+
+}
+
+void deleteCharacters() {
+
+}
+
+void intersection() {
+
+}
+
 void menu(){
 
     int option;
@@ -48,6 +60,19 @@ void menu(){
 
             case 3:
                 countVowels();
+                break;
+            case 4:
+                break;
+            case 5:
+                fillCharacters();
+                break;
+            case 6:
+                deleteCharacters();
+                break;
+            case 7:
+                intersection();
+                break;
+            case 8:
                 break;
             case 9:
                 break;
@@ -142,3 +167,5 @@ void countVowels(){
     int vowels= countingVowels(chain);
     printf("El numero de vocales encontradas es de : %d\n",vowels);
 }
+
+

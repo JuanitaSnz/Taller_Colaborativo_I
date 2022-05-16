@@ -7,6 +7,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeMinGWFindMake.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake"
 		},
 		{
@@ -285,6 +290,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -419,8 +439,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug",
-		"source" : "C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC"
+		"build" : "C:/Users/Asus/Documents/UPTC Quinto Semestre/Programacion III/C - C++/Taller C/Taller_Colaborativo_I/cmake-build-debug",
+		"source" : "C:/Users/Asus/Documents/UPTC Quinto Semestre/Programacion III/C - C++/Taller C/Taller_Colaborativo_I"
 	},
 	"version" : 
 	{

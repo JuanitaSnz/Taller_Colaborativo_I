@@ -17,7 +17,49 @@ void fillCharacters() {
 
 }
 
+void developDeleteCharacters(char *cadena, char *caracter) {
+
+    short int i = 0,j = 0,k = 1;
+    //Se recorre la cadena caracter por caracter
+    while (cadena[i]){
+        k = 1;
+        int indice = 0;
+        //Se recorre el caracter ingresado
+        while (caracter[indice]){
+            //Se compara si el caracter de la cadena es equivalente a al caracter entrante no se agrega
+            if(cadena[i] == caracter[indice]){
+                k=0;
+            }
+            indice++;
+        }
+        //Se genera la nueva cadena sin el caracter indeseado
+        if (k){
+            cadena[j] = cadena[i];
+            j++;
+        }
+        i++;
+    }
+    //Se agrega el ultimo caracter
+    cadena[j] = 0;
+
+    printf("Nueva cadena: '%s'\n", cadena);
+
+}
+
 void deleteCharacters() {
+
+    char* cadena[100];
+    char* caracter[100];
+
+    printf("Ingrese una cadena de texto\n");
+    fflush(stdin);
+    fgets(cadena,45,stdin);
+
+    printf("Ingrese el caracter a borrar\n");
+    fflush(stdin);
+    fgets(caracter,20,stdin);
+
+    developDeleteCharacters(cadena,caracter);
 
 }
 

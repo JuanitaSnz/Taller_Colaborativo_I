@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Asus\Documents\UPTC Quinto Semestre\Programacion III\C - C++\Taller C\Taller_Colaborativo_I"
+CMAKE_SOURCE_DIR = "D:\Programacion\Programacion III s2\Taller_Colaborativo_I"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Asus\Documents\UPTC Quinto Semestre\Programacion III\C - C++\Taller C\Taller_Colaborativo_I\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Programacion\Programacion III s2\Taller_Colaborativo_I\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Asus\Documents\UPTC Quinto Semestre\Programacion III\C - C++\Taller C\Taller_Colaborativo_I\cmake-build-debug\CMakeFiles" "C:\Users\Asus\Documents\UPTC Quinto Semestre\Programacion III\C - C++\Taller C\Taller_Colaborativo_I\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Programacion\Programacion III s2\Taller_Colaborativo_I\cmake-build-debug\CMakeFiles" "D:\Programacion\Programacion III s2\Taller_Colaborativo_I\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Asus\Documents\UPTC Quinto Semestre\Programacion III\C - C++\Taller C\Taller_Colaborativo_I\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Programacion\Programacion III s2\Taller_Colaborativo_I\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

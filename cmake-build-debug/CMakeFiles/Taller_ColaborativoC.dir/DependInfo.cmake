@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Documents/UPTC Quinto Semestre/Programacion III/C - C++/Taller C/Taller_Colaborativo_I/main.c" "CMakeFiles/Taller_ColaborativoC.dir/main.c.obj" "gcc" "CMakeFiles/Taller_ColaborativoC.dir/main.c.obj.d"
+  "D:/Programacion/Programacion III s2/Taller_Colaborativo_I/main.c" "CMakeFiles/Taller_ColaborativoC.dir/main.c.obj" "gcc" "CMakeFiles/Taller_ColaborativoC.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.

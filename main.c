@@ -6,6 +6,7 @@ void menu();
 void properName();
 void searchWord();
 void countVowels();
+void deleteRepeated();
 
 
 int main() {
@@ -115,11 +116,15 @@ void menu(){
                 intersection();
                 break;
             case 8:
+                deleteRepeated();
                 break;
+
             case 9:
                 break;
+
             case 10:
                 break;
+
             default:
                 printf("Opcion no valida\n");
                 break;
@@ -208,6 +213,10 @@ void countVowels(){
     scanf("%[^\n]",chain);
     int vowels= countingVowels(chain);
     printf("El numero de vocales encontradas es de : %d\n",vowels);
+}
+
+void deleteRepeated(){
+
 }
 
 

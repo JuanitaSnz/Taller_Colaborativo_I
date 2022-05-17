@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Asus/Documents/UPTC Quinto Semestre/Programacion III/C - C++/Taller C/Taller_Colaborativo_I
+# Install script for directory: D:/Programacion/Programacion III s2/Taller_Colaborativo_I
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Asus/Documents/UPTC Quinto Semestre/Programacion III/C - C++/Taller C/Taller_Colaborativo_I/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Programacion/Programacion III s2/Taller_Colaborativo_I/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

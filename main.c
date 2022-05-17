@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdbool.h>
+
 void menu();
 void properName();
 void searchWord();
@@ -13,6 +14,7 @@ void intersection();
 void deleteRepeated();
 void displacement();
 void validateEmail();
+void options();
 
 
 int main() {
@@ -25,23 +27,9 @@ void menu(){
 
     int option;
 
-    char *menu = "****************Bienvenido*****************\n"
-                 "1. Convertir cadena a nombre propio  \n"
-                 "2. Buscar en la cadena \n"
-                 "3. Contar vocales \n"
-                 "4. Anio nuevo \n"
-                 "5. Llenar caracteres \n"
-                 "6. Borrar caracteres \n"
-                 "7. Interseccion \n"
-                 "8. Eliminar repetidos \n"
-                 "9. Desplazamiento \n"
-                 "10. Validacion de correo\n"
-                 "0. Salir \n"
-                 "..............................................\n"
-                 "Seleccione una opcion\n";
-
     do{
-        printf(menu);
+        options();
+
         scanf("%d",&option);
 
         switch(option){
@@ -78,6 +66,10 @@ void menu(){
 
             case 10:
                 validateEmail();
+                break;
+
+            case 0:
+                printf("Saliendo\n");
                 break;
 
             default:
@@ -275,6 +267,23 @@ void displacement() {
 
 void validateEmail() {
 
+}
+
+void options(){
+    printf("****************Bienvenido*****************\n"
+           "1. Convertir cadena a nombre propio  \n"
+           "2. Buscar en la cadena \n"
+           "3. Contar vocales \n"
+           "4. Anio nuevo \n"
+           "5. Llenar caracteres \n"
+           "6. Borrar caracteres \n"
+           "7. Interseccion \n"
+           "8. Eliminar repetidos \n"
+           "9. Desplazamiento \n"
+           "10. Validacion de correo\n"
+           "0. Salir \n"
+           "..............................................\n"
+           "Seleccione una opcion\n");
 }
 
 

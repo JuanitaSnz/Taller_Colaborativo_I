@@ -225,7 +225,48 @@ void intersection() {
 }
 
 void deleteRepeated(){
+    // Inicializamos el parametro de tamaño, aun arreglo de carácter para la palabra o cadena y un craácter como auxiliar
+    int size;
+    char word[100];
+    char aux;
+    printf("ingrese una palabra con caracteres repetidos:\n");
+    // Se limpia el buffer del sistema
+    fflush(stdin);
+    // Usamos la funcion fgets() para leer la palabra o cadena ingresada por teclado
+    fgets(word,100,stdin);
+    // Se calcula el tamaño de la palabra con la funcion strlen()
+    size = strlen(word);
 
+    // Se realizan dos for para comparar cada carácter de la palabra o la cadena reemplazandola con un espacion en vacio
+    // dejando el ultimo carácter comparado
+    for (int i = 0; i < size; ++i) {
+        for (int j = 0; j < size - 1; ++j) {
+            if(i != j){
+                if(word[j] == word[i]){
+                    word[i] = ' ';
+                }
+            }
+        }
+
+    }
+
+    // Se realiza un ordenamiento de tipo burbuja por su optimizacion y eliminar los espacion vacios
+    for (int i = 0; i < size - 1; ++i) {
+        for (int j = 0; j < (size - 1); ++j) {
+            // Si la pocicion actual de la palabra o la cadena esta vacia se reemplaza con el siguiente carácter
+            if(word[j] == ' ' && word[j+1] != ' '){
+                aux = word[j];
+                word[j] = word[j+1];
+                word[j+1] = aux;
+            }
+        }
+    }
+
+    // Se imprime en pantalla la palabra o cadena sin caracteres repetidos
+    printf("Palabra sin caracteres repetidos:\n");
+    for (int i = 0; i < size; ++i) {
+        printf("%c",word[i]);
+    }
 }
 
 void displacement() {

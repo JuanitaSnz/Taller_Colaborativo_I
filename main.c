@@ -267,6 +267,42 @@ void displacement() {
 
 void validateEmail() {
 
+    // Se inicializan los carcteres de eMail y de validacion de "@" y "."
+    char eMail[100];
+    char* atValidation;
+    char* pointValidation;
+
+    // Se solicita el ingreso del correo
+    printf("Ingrese su correo electronico\n>>");
+    fflush(stdin);
+    fgets(eMail, 100, stdin);
+
+    // Se comprueba que exista el caracter "@" en el eMail ingresado
+    for (int i = 0; i <= strlen(eMail); i++) {
+        atValidation = strchr(eMail, '@');
+        if (atValidation != NULL) {
+            break;
+        }
+    }
+    // Se comprueba que exista el caracter "." en el eMail ingresado
+    for (int i = 0; i <= strlen(eMail); i++) {
+        pointValidation = strchr(eMail, '.');
+    }
+
+    //se valida que exista el caracter "@"
+    if (atValidation != NULL) {
+
+        //Se valida que el caracter "." exista y que este despues del carcter "@"
+        if (pointValidation != NULL && pointValidation > atValidation) {
+            printf("Correo valido.\n");
+        }
+        else {
+            printf("El correo es invalido\n");
+        }
+    }
+    else {
+        printf("El correo es invalido\n");
+    }
 }
 
 void options(){

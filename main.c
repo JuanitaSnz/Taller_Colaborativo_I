@@ -262,6 +262,44 @@ void deleteRepeated(){
 }
 
 void displacement() {
+    // Se inicializa el parametro para escojer una opcion, un char para ingresar una palabra y una char como auxiliar
+    int op;
+    int size;
+    char word[100];
+    char aux[100];
+
+    printf("Ingrese una palabra\n");
+    fflush(stdin);
+    fgets(word, 100, stdin);
+    size = strlen(word);
+
+    printf("A que lado decea desplazar un caracter\n"
+                  " 1. Ultimo caracter al comienzo de la izquierda\n"
+                  " 2. Primer caracter al final de la derecha\n");
+
+    scanf("%d", &op);
+
+    if(op == 1){
+        // Se asigna la pocicion de el ultimo caracter de la palabra como primero en el primero en aux
+        aux[0]=word[(size-2)];
+        // Se recorre un ciclo desde 1 hasta una pocicion anterior del ultimo carcter de la palabra
+        for (int i = 1; i < (size-1); ++i) {
+            // Se asigna la pocicion del caracter de aux con el anterior de la palabra
+            aux[i]=word[i-1];
+        }
+        printf("La palabra con la ultima letra al comienzo es: %s\n",aux);
+    }else if(op == 2){
+        // Se asigna la pocicion de el ultimo caracter de aux comoel primero de la palabra
+        aux[(size-2)]=word[0];
+        // se recorre un ciclo desde 0 hasta 2 pociciones antes del ultimo caracter de la palabra
+        for (int i = 0; i < (size-2); ++i) {
+            // Se asigna la posicion del caracter en aux con el caracter de la posicion siguente de la palabra
+            aux[i]=word[i+1];
+        }
+        printf("%s", aux);
+    }else{
+        printf("Opcion invalida\n");
+    }
 
 }
 

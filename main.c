@@ -2,11 +2,13 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
 
 void menu();
 void properName();
 void searchWord();
 void countVowels();
+void newYearCalculator();
 void fillCharacters();
 void developDeleteCharacters(char *cadena, char *caracter);
 void deleteCharacters();
@@ -46,7 +48,9 @@ void menu(){
                 countVowels();
                 break;
             case 4:
+                newYearCalculator();
                 break;
+
             case 5:
                 fillCharacters();
                 break;
@@ -160,6 +164,21 @@ void countVowels(){
     scanf("%[^\n]",chain);
     int vowels= countingVowels(chain);
     printf("El numero de vocales encontradas es de : %d\n",vowels);
+}
+
+void newYearCalculator(){
+    // Se inicializa today con los segundos transcurridos desde 1970 segun el tiempo UNIX
+    time_t today = time(NULL);
+    // Se restan los segundos transcurridos desde 1970 hasta año nuevo con el valor de today segun el tiempo UNIX
+    time_t diference = 1672531200 - today;
+    // Se convierten los sgundos en dias, horas y minutos
+    long long int days = diference / 60 / 60 / 24;
+    long long int hours = diference / 60 / 60;
+    long long int minutes = diference / 60;
+    printf("Faltan: %lld dia(s) para a%co nuevo\n"
+                  "Faltan: %lld hora(s) para a%co nuevo\n"
+                  "Faltan: %lld minuto(s) para a%co nuevo\n"
+                  , days, 164, hours, 164, minutes, 164);
 }
 
 void fillCharacters() {
@@ -348,7 +367,7 @@ void options(){
            "1. Convertir cadena a nombre propio  \n"
            "2. Buscar en la cadena \n"
            "3. Contar vocales \n"
-           "4. Anio nuevo \n"
+           "4. A%co nuevo \n"
            "5. Llenar caracteres \n"
            "6. Borrar caracteres \n"
            "7. Interseccion \n"
@@ -357,7 +376,7 @@ void options(){
            "10. Validacion de correo\n"
            "0. Salir \n"
            "..............................................\n"
-           "Seleccione una opcion\n");
+           "Seleccione una opcion\n", 164);
 }
 
 

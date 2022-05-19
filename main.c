@@ -10,7 +10,6 @@ void searchWord();
 void countVowels();
 void newYearCalculator();
 void fillCharacters();
-void developDeleteCharacters(char *cadena, char *caracter);
 void deleteCharacters();
 void intersection();
 void deleteRepeated();
@@ -181,9 +180,66 @@ void newYearCalculator(){
                   , days, 164, hours, 164, minutes, 164);
 }
 
+void insertString(char *cadena, char *caracter, int cantidad, int posicion);
+
+void insertString(char *cadena, char *caracter, int cantidad, int posicion){
+
+    char cadenaSuplente[100] = "";
+    char cadena2 [100] = "";
+    char cadena3 [100] = "";
+    char cadenaInicial[100] = "";
+
+    //se establece la cadena que entro a la una nueva cadena
+    strcpy(cadenaSuplente, cadena);
+
+    //Se genera la cadena que contiene la cantidad de veces que se desea repetir el caracter
+    for (int i = 0; i < cantidad; ++i) {
+
+        cadena3[i] = *caracter;
+        cadena2[i] = *cadena3;
+
+    }
+
+    //Se posiciona la nueva cadena al inicio de la cadena ingresada inicialmente por el ususario
+    if(posicion == 1){
+
+        strcpy(cadenaInicial, cadena2);
+        strcat(cadenaInicial,cadenaSuplente);
+        printf("cadena afuera: %s" , cadenaInicial);
+
+    }else{
+
+        //Se posiciona la nueva cadena al final de la cadena ingresada inicialmente por el ususario
+        strcat(cadenaSuplente,cadena2);
+        printf("cadena afuera: %s" , cadenaSuplente);
+
+    }
+}
 void fillCharacters() {
 
+    printf("Ingrese la cadena de caracteres\n");
+    char *cadena[100];
+    scanf(" %[^\n]",cadena);
+
+    printf("Ingrese el caracter que desea repetir en la cadena\n");
+    char *caracter[100];
+    scanf("%s", caracter);
+
+
+    printf("Ingrese cantidad de veces a repetir el caracter\n");
+    int cantidad;
+    scanf("%i", &cantidad);
+
+    printf("1. Inicio\n");
+    printf("2. Final\n");
+    int posicion;
+    scanf("%i", &posicion);
+
+    insertString(cadena, caracter, cantidad, posicion);
+
 }
+
+void developDeleteCharacters(char *cadena, char *caracter);
 
 void developDeleteCharacters(char *cadena, char *caracter) {
 

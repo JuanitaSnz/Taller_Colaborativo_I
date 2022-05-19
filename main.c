@@ -315,7 +315,7 @@ void displacement() {
             // Se asigna la posicion del caracter en aux con el caracter de la posicion siguente de la palabra
             aux[i]=word[i+1];
         }
-        printf("%s", aux);
+        printf("La palabra con la primera letra al final es: %s\n",aux);
     }else{
         printf("Opcion invalida\n");
     }

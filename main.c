@@ -476,11 +476,11 @@ void validateEmail() {
 void options(){
     printf(
             "                                        \n"
-            "-----------> Menú <------------\n"
+            "-----------> Men%c <------------\n"
            "1 ~Convertir una cadena a nombre propio  \n"
            "2 ~Buscar palabra en una cadena \n"
            "3 ~Contar vocales de una cadena  \n"
-           "4 ~Conteo anio nuevo \n"
+           "4 ~Conteo a%co nuevo \n"
            "5 ~Llenar caracteres \n"
            "6 ~Borrar caracteres \n"
            "7 ~Interseccion \n"
@@ -490,7 +490,7 @@ void options(){
            "0 ~Salir \n"
            "                                        \n"
            "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-           "Seleccione una opcion\n", 164);
+           "Seleccione una opcion\n", 163, 164);
 }
 
 

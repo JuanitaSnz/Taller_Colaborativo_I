@@ -1,3 +1,3 @@
-D:/Programacion/Programacion III s2/Taller_Colaborativo_I/cmake-build-debug/CMakeFiles/Taller_ColaborativoC.dir
-D:/Programacion/Programacion III s2/Taller_Colaborativo_I/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Programacion/Programacion III s2/Taller_Colaborativo_I/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug/CMakeFiles/Taller_ColaborativoC.dir
+C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/CLionProjects/Taller_ColaborativoC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

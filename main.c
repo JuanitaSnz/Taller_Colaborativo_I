@@ -115,25 +115,29 @@ void properName() {
 }
 
 void searchWord(){
-    char *iText1[100];
-    char *iText2[100];
-    char *search = NULL;
-    int count=0;
+   char word[100];
+   char *tok;
+   int cont =0;
+   char word2[100];
 
-    printf("Ingrese la cadena inicial\n");
+   printf("Ingrese la  primera cadena \n" );
+   fflush(stdin);
+   gets(word);
+    printf("Ingrese la  palabra que desea encontrar \n" );
     fflush(stdin);
-    fgets(iText1,100,stdin);
+    gets(word2);
 
-    printf("Ingrese la cadena que desea comparar\n");
-    fflush(stdin);
-    fgets(iText2,100,stdin);
+   tok = strtok(word, " ,.:;");
 
-    search = strstr(iText1,iText2);
-    while(search != NULL){
-        count= count+1;
-        search = strstr(search+1,iText2);
-    }
-    printf("Total de coincidencias : %i\n",count);
+   while(tok != NULL){
+       if(stricmp(tok,word2) ==0){
+           cont++;
+       }
+
+       tok= strtok(NULL," ,.:;");
+   }
+
+   printf("La palabra %s se encontro = %d veces\n",word2,cont);
 }
 
 
@@ -470,19 +474,22 @@ void validateEmail() {
 }
 
 void options(){
-    printf("****************Bienvenido*****************\n"
-           "1. Convertir cadena a nombre propio  \n"
-           "2. Buscar en la cadena \n"
-           "3. Contar vocales \n"
-           "4. A%co nuevo \n"
-           "5. Llenar caracteres \n"
-           "6. Borrar caracteres \n"
-           "7. Interseccion \n"
-           "8. Eliminar repetidos \n"
-           "9. Desplazamiento \n"
-           "10. Validacion de correo\n"
-           "0. Salir \n"
-           "..............................................\n"
+    printf(
+            "                                        \n"
+            "-----------> Menú <------------\n"
+           "1 ~Convertir una cadena a nombre propio  \n"
+           "2 ~Buscar palabra en una cadena \n"
+           "3 ~Contar vocales de una cadena  \n"
+           "4 ~Conteo anio nuevo \n"
+           "5 ~Llenar caracteres \n"
+           "6 ~Borrar caracteres \n"
+           "7 ~Interseccion \n"
+           "8 ~Eliminar repetidos \n"
+           "9 ~Desplazamiento \n"
+           "10 ~Validacion de correo\n"
+           "0 ~Salir \n"
+           "                                        \n"
+           "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
            "Seleccione una opcion\n", 164);
 }
 

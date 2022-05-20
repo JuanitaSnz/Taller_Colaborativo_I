@@ -287,7 +287,58 @@ void deleteCharacters() {
 
 }
 
+void developIntersection(char* cadena1, char* cadena2);
+
+void developIntersection(char* cadena1, char* cadena2 ){
+
+    char cadenaInicial[100] = "";
+    char intersection[100] = "";
+    char* b ;
+    int a = 0;
+
+    //Se recorre la primera cadena
+    for (int i = 0; i < strlen(cadena1); ++i) {
+
+        //Se recorre la segunda cadena
+        for (int j = 0; j < strlen(cadena2); ++j) {
+
+            //Se compara si las letras de la cadena2 es igual a la cadena1
+            if(cadena1[i] == cadena2[j]){
+
+                // Si el caracter es igual se almacena el caracter en *b
+                *b = cadena2[j];
+
+                //Si verifica si el caracter esta o no esta en el vector cadenaInicial
+                if(strchr(cadenaInicial,*b) == NULL){
+
+                    //se agrega el caracter al vector cadenaInicial
+                    strcat(cadenaInicial, b);
+
+                }
+
+            }
+
+        }
+
+    }
+
+    //se guarda la informacion de cadena inicial en el vector Intersection
+    strcat(intersection, cadenaInicial);
+    printf("Interseccion de la cadena: %s \n", intersection);
+
+}
+
 void intersection() {
+
+    printf("Ingrese la primera cadena de caracteres\n");
+    char *cadena1[100];
+    scanf(" %[^\n]",cadena1);
+
+    printf("Ingrese la segunda cadena de caracteres\n");
+    char *cadena2[100];
+    scanf(" %[^\n]",cadena2);
+
+    developIntersection(cadena1, cadena2);
 
 }
 
